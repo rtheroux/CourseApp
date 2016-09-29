@@ -29,7 +29,7 @@ public class DummyContent {
         // Add some sample items.
         addItem(createDummyItem("CSC101", "Intro to CS", "An introduction to computer science"));
         addItem(createDummyItem("CSC206", "Operating systems", "Discusses low level programming"));
-        addItem(createDummyItem("ENG101", "Intro to Literary Studies", "An introduction to poetry and fiction"));
+        addItem(createDummyItem("ENG105", "Intro to Literary Studies", "An introduction to poetry and fiction"));
     }
 
     private static void addItem(DummyItem item) {
