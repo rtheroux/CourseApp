@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * KRISTEN's COMMENT
  * Helper class for providing sample content for user interfaces created by
  * Android template wizards.
  * <p>
