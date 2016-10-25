@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Master Detail</string>
     <string name="title_course_detail">Course Detail</string>
+
+    <string name="title_activity_splash">splashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

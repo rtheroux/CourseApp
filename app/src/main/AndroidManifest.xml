@@ -15,7 +15,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -26,6 +26,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ross.masterdetail.CourseListActivity" />
+        </activity>
+        <activity
+            android:name=".splashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
