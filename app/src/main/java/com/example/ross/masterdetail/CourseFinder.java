@@ -1,3 +1,5 @@
+package com.example.ross.masterdetail;
+
 import java.util.ArrayList;
 
 /**
@@ -6,4 +8,5 @@ import java.util.ArrayList;
 
 public class CourseFinder {
     ArrayList<Course> courses = new ArrayList<>();
+
 }

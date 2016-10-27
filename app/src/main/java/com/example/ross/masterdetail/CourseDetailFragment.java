@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.example.ross.masterdetail.dummy.DummyContent;
 
 /**
- * A fragment representing a single Course detail screen.
+ * A fragment representing a single com.example.ross.masterdetail.Course detail screen.
  * This fragment is either contained in a {@link CourseListActivity}
  * in two-pane mode (on tablets) or a {@link CourseDetailActivity}
  * on handsets.
