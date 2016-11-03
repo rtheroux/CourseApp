@@ -96,6 +96,8 @@ public class splashActivity extends AppCompatActivity {
                 sleep(4000);
             } catch (InterruptedException e) {
             } finally {
+                CourseFinder cf = new CourseFinder();
+                cf.loadCourses();
                 Intent openMainActivity = new Intent("android.intent.action.MAIN");
                 startActivity(openMainActivity);
             }
