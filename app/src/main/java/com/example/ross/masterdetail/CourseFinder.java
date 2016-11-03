@@ -55,6 +55,7 @@ public class CourseFinder {
             con.disconnect();
         } catch (Exception e) {
             e.printStackTrace();
+
         }
         System.out.println(jsonBuffer);
         String finalJson = jsonBuffer.toString();
