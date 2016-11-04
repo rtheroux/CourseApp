@@ -13,8 +13,6 @@ import java.util.Map;
  * TODO: Replace all uses of this class before publishing your app.
  */
 
-// Brendan's Comment
-// Another comment, Brendan
 public class DummyContent {
 
     /**
