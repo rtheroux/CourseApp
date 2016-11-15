@@ -14,32 +14,30 @@
     tools:showIn="@layout/activity_year_semester">
 
     <Button
-        android:text="Submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
+        android:text="FALL 2016"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
         android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:id="@+id/spinner"
+        android:layout_marginTop="21dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:entries="@array/planet_names"
-        />
+        android:textSize="20pt"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#109E64"/>
+    <Button
+        android:text="SPRING 2017"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginBottom="15dp"
+        android:textSize="20pt"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#109E64"/>
 
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinner"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
-        android:id="@+id/spinner2"
-        android:entries="@array/planet_names"
-        />
+
+
 </RelativeLayout>

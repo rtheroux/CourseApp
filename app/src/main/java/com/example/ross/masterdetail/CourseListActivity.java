@@ -15,8 +15,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-import com.example.ross.masterdetail.dummy.DummyContent;
-
 import java.util.List;
 
 /**
@@ -35,8 +33,10 @@ public class CourseListActivity extends AppCompatActivity {
      */
     private boolean mTwoPane;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_list);
 
@@ -67,16 +67,18 @@ public class CourseListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(DummyContent.ITEMS));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(CourseFinder.ITEMS));
+        System.out.println(CourseFinder.ITEMS.get(7).title1);
     }
 
     public class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
 
-        private final List<DummyContent.DummyItem> mValues;
+        private final List<CourseFinder.MyCourse> mValues;
 
-        public SimpleItemRecyclerViewAdapter(List<DummyContent.DummyItem> items) {
+        public SimpleItemRecyclerViewAdapter(List<CourseFinder.MyCourse> items) {
             mValues = items;
+            System.out.println(mValues.get(7).title1);
         }
 
         @Override
@@ -89,8 +91,12 @@ public class CourseListActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mItem = mValues.get(position);
+            System.out.println(mValues.get(position));
             holder.mIdView.setText(mValues.get(position).id);
             holder.mContentView.setText(mValues.get(position).content);
+            holder.mContentView.setText(mValues.get(position).title1);
+            holder.mIdView.setText(mValues.get(position).course);
+            System.out.println(mValues.get(position).title1);
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -123,7 +129,7 @@ public class CourseListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
-            public DummyContent.DummyItem mItem;
+            public CourseFinder.MyCourse mItem;
 
             public ViewHolder(View view) {
                 super(view);

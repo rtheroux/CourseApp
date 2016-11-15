@@ -2,6 +2,7 @@ package com.example.ross.masterdetail;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Parcelable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,9 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 import com.example.ross.masterdetail.R;
+
+import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -93,13 +97,15 @@ public class splashActivity extends AppCompatActivity {
 
         Thread timer = new Thread() {public void run(){
             try {
-                sleep(4000);
+                sleep(2000);
             } catch (InterruptedException e) {
             } finally {
                 CourseFinder cf = new CourseFinder();
                 cf.loadCourses();
-                Intent openMainActivity = new Intent("android.intent.action.MAIN");
-                startActivity(openMainActivity);
+
+                Intent mIntent = new Intent(splashActivity.this, YearSemester.class);
+                startActivity(mIntent);
+
             }
              }  };
         timer.start();
